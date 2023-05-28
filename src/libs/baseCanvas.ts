@@ -9,7 +9,7 @@ import {
 } from 'three'
 
 class BaseCanvas {
-  private ref: RefObject<Element>
+  public ref: RefObject<Element>
   public rect!: DOMRect | undefined
   public w!: number
   public h!: number
@@ -30,7 +30,7 @@ class BaseCanvas {
 
   public setRenderer(): void {
     this.renderer = new THREE.WebGLRenderer()
-    this.renderer.setClearColor(0x000000)
+    // this.renderer.setClearColor(0x000000)
     this.renderer.setPixelRatio(Math.min(2, window.devicePixelRatio))
     this.renderer.setSize(this.w, this.h)
     this.canvas = this.ref.current?.appendChild(this.renderer.domElement)!
@@ -49,9 +49,9 @@ class BaseCanvas {
       this.fov,
       this.w / this.h,
       0.1,
-      2000
+      10000
     )
-    this.camera.position.z = this.cameraZ + 20
+    this.camera.position.z = this.cameraZ
   }
 
   public animate(): void {
