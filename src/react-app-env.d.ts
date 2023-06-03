@@ -83,6 +83,11 @@ declare module '*.frag' {
   export default value
 }
 
+declare module '*.mp4' {
+  const src: string
+  export default src
+}
+
 // declare module 'troika-three-text' {
 //   const src: any
 //   export default src

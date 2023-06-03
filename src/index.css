@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
 @layer components {
   .btn-primary {
     @apply py-2 px-4 bg-white text-black font-semibold rounded-md border-black border-solid border-2;
@@ -20,4 +22,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.char {
+  display: inline-block;
 }

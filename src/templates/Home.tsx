@@ -6,6 +6,7 @@ import { auth } from '../firebase'
 import hero from '../img/blank-notebook-on-creative-workspace.jpg'
 import Morphing from '../libs/morphing'
 import Ripple from '../libs/ripple'
+import Exploding from '../components/Exploding'
 
 const Home = () => {
   const user = useAppSelector((state) => state.auth.user)
@@ -26,7 +27,8 @@ const Home = () => {
   // }, [dispatch])
   return (
     <section className="h-screen relative mt-[120px]">
-      <TeleportationCanvas />
+      {/* <TeleportationCanvas /> */}
+      <Exploding />
       {/* <div
         className="absolute top-0 left-0 w-full h-full z-0 bg-red"
         ref={canvasRef}
