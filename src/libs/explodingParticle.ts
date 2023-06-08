@@ -84,7 +84,12 @@ export default class ExplodingParticle extends BaseCanvas {
   }
 
   public setRenderer(): void {
-    this.renderer = new WebGLRenderer()
+    this.renderer = new WebGLRenderer({
+      powerPreference: 'high-performance',
+      antialias: false,
+      stencil: false,
+      depth: false,
+    })
     this.renderer.setClearColor(0x000000)
     this.renderer.setPixelRatio(Math.min(1, window.devicePixelRatio))
     this.renderer.setSize(this.w, this.h)

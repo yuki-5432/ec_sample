@@ -7,6 +7,7 @@ import hero from '../img/blank-notebook-on-creative-workspace.jpg'
 import Morphing from '../libs/morphing'
 import Ripple from '../libs/ripple'
 import Exploding from '../components/Exploding'
+import Distortion from '../components/Distortion'
 
 const Home = () => {
   const user = useAppSelector((state) => state.auth.user)
@@ -28,7 +29,8 @@ const Home = () => {
   return (
     <section className="h-screen relative mt-[120px]">
       {/* <TeleportationCanvas /> */}
-      <Exploding />
+      <Distortion />
+      {/* <Exploding /> */}
       {/* <div
         className="absolute top-0 left-0 w-full h-full z-0 bg-red"
         ref={canvasRef}
