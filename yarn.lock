@@ -5683,6 +5683,11 @@ globby@^11.0.4, globby@^11.1.0:
     merge2 "^1.4.1"
     slash "^3.0.0"
 
+glsl-constants@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/glsl-constants/-/glsl-constants-2.0.0.tgz#596b726ebe75110aaba659df4e2471940129c117"
+  integrity sha512-PGNZJox3SVSrKdxAEgPzIUNGQjmdjApzdectCHQoiJCxwFhh4IFmiSSm58JhqBxyQOR5XWnBZFTBukzN7v06eA==
+
 glsl-inject-defines@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/glsl-inject-defines/-/glsl-inject-defines-1.0.3.tgz#dd1aacc2c17fcb2bd3fc32411c6633d0d7b60fd4"
@@ -5709,6 +5714,11 @@ glsl-resolve@0.0.1:
   dependencies:
     resolve "^0.6.1"
     xtend "^2.1.2"
+
+glsl-rotate@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/glsl-rotate/-/glsl-rotate-2.0.0.tgz#2f82ceb50e371f6ba4462e23d8cdc676ba2a513d"
+  integrity sha512-g8EUX6o88Bawe33uta2jPjzQBTHE+AHF8OUErAKqo3X76PY049M9yKJqsKDYB213D4f6nWK7tj/mcox/4tLvOA==
 
 glsl-token-assignments@^2.0.0:
   version "2.0.2"

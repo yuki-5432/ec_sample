@@ -8,6 +8,7 @@ import Morphing from '../libs/morphing'
 import Ripple from '../libs/ripple'
 import Exploding from '../components/Exploding'
 import Distortion from '../components/Distortion'
+import Gradient from '../components/Gradient'
 
 const Home = () => {
   const user = useAppSelector((state) => state.auth.user)
@@ -26,10 +27,13 @@ const Home = () => {
   //   dispatch(observe())
   //   console.log(auth.currentUser)
   // }, [dispatch])
+
   return (
     <section className="h-screen relative mt-[120px]">
+      <Gradient />
       {/* <TeleportationCanvas /> */}
-      <Distortion />
+
+      {/* <Distortion /> */}
       {/* <Exploding /> */}
       {/* <div
         className="absolute top-0 left-0 w-full h-full z-0 bg-red"
